@@ -1,12 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-    
-    </body>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perbandingan Interaktif: GoPro Hero 12 vs DJI Action 5 Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <span class="text-lg font-bold text-gray-800">Duel Kamera Aksi</span>
+                <div class="hidden sm:flex sm:space-x-8">
+                    <a href="#spesifikasi" class="text-gray-600 hover:text-[#E50914] font-medium transition-colors">Spesifikasi</a>
+                    <a href="#kualitas-gambar" class="text-gray-600 hover:text-[#E50914] font-medium transition-colors">Kualitas Gambar</a>
+                    <a href="#performa" class="text-gray-600 hover:text-[#E50914] font-medium transition-colors">Performa</a>
+                    <a href="#rekomendasi" class="text-gray-600 hover:text-[#E50914] font-medium transition-colors">Rekomendasi</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="py-16 sm:py-24 text-center bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900">
+                    GoPro Hero 12 <span class="text-gray-400">vs</span> DJI Action 5 Pro
+                </h1>
+                <p class="mt-6 max-w-3xl mx-auto text-lg sm:text-xl text-gray-600">
+                    Sebuah perbandingan interaktif untuk membantu Anda memilih kamera aksi yang tepat. Analisis mendalam dari spesifikasi hingga performa di dunia nyata.
+                </p>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/00A5E0/FFFFFF?text=GoPro+Hero+12" alt="GoPro Hero 12" class="rounded-xl shadow-lg mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/600x400/00A5E0/FFFFFF?text=GoPro+Hero+12';">
+                        <h2 class="mt-4 text-2xl font-bold">GoPro Hero 12 Black</h2>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x400/E50914/FFFFFF?text=DJI+Action+5+Pro" alt="DJI Action 5 Pro" class="rounded-xl shadow-lg mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E50914/FFFFFF?text=DJI+Action+5+Pro';">
+                        <h2 class="mt-4 text-2xl font-bold">DJI Osmo Action 5 Pro</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="spesifikasi" class="py-16 sm:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Perbandingan Spesifikasi Kunci</h2>
+                    <p class="mt-4 text-lg text-gray-600">Lihat perbedaan mendasar antara kedua kamera dalam sekejap.</p>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full max-w-4xl mx-auto border-collapse text-left">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="p-4 font-semibold">Fitur</th>
+                                <th class="p-4 font-semibold text-center">GoPro Hero 12 Black</th>
+                                <th class="p-4 font-semibold text-center">DJI Osmo Action 5 Pro</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                            <tr class="border-b"><td class="p-4 font-medium">Ukuran Sensor</td><td class="p-4 text-center">1/1.9 inci CMOS</td><td class="p-4 text-center font-bold">1/1.3 inci CMOS</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-4 font-medium">Resolusi Video Maks.</td><td class="p-4 text-center font-bold">5.3K @ 60fps</td><td class="p-4 text-center">4K @ 120fps</td></tr>
+                            <tr class="border-b"><td class="p-4 font-medium">Resolusi Foto Maks.</td><td class="p-4 text-center">27.13 MP</td><td class="p-4 text-center font-bold">~40 MP</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-4 font-medium">Ketahanan Air (tanpa casing)</td><td class="p-4 text-center">10 meter</td><td class="p-4 text-center font-bold">20 meter</td></tr>
+                            <tr class="border-b"><td class="p-4 font-medium">Penyimpanan Internal</td><td class="p-4 text-center">Tidak Ada</td><td class="p-4 text-center font-bold">47 GB</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-4 font-medium">Jenis Layar</td><td class="p-4 text-center">LCD</td><td class="p-4 text-center font-bold">OLED (Depan & Belakang)</td></tr>
+                            <tr class="border-b"><td class="p-4 font-medium">Kapasitas Baterai</td><td class="p-4 text-center">1720 mAh</td><td class="p-4 text-center font-bold">1950 mAh</td></tr>
+                            <tr class="bg-gray-50"><td class="p-4 font-medium">Berat</td><td class="p-4 text-center">154g</td><td class="p-4 text-center font-bold">146g</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="kualitas-gambar" class="py-16 sm:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Duel Kualitas Gambar & Video</h2>
+                    <p class="mt-4 text-lg text-gray-600">Inti dari setiap kamera aksi. Siapa yang unggul dalam detail, warna, dan kondisi sulit?</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold text-center mb-4">Resolusi Video Maksimum</h3>
+                        <div class="chart-container">
+                            <canvas id="resolutionChart"></canvas>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600 text-center">GoPro unggul dalam resolusi mentah, bagus untuk cropping. Namun, sensor DJI yang lebih besar menangkap lebih banyak cahaya per piksel.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold text-center mb-4">Performa Cahaya Rendah</h3>
+                        <div class="flex items-center justify-around h-full">
+                           <div class="text-center">
+                                <span class="text-6xl">🌙</span>
+                                <p class="mt-2 font-semibold">GoPro Hero 12</p>
+                                <p class="text-sm text-gray-600">Cenderung gelap, bayangan pekat, highlight mudah *blown out*.</p>
+                           </div>
+                            <div class="text-center">
+                                <span class="text-6xl">🌟</span>
+                                <p class="mt-2 font-semibold">DJI Action 5 Pro</p>
+                                <p class="text-sm text-gray-600">Jauh lebih baik, detail terjaga, rekaman lebih dapat digunakan.</p>
+                           </div>
+                        </div>
+                         <p class="mt-4 text-sm text-gray-600 text-center">Sensor DJI yang lebih besar secara dramatis meningkatkan kinerja dalam kondisi minim cahaya, membuatnya lebih serbaguna.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="performa" class="py-16 sm:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Daya Tahan & Performa</h2>
+                    <p class="mt-4 text-lg text-gray-600">Baterai, panas, dan ketahanan adalah kunci untuk sesi perekaman tanpa gangguan.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold text-center mb-4">Waktu Rekam Baterai (4K @ 30fps)</h3>
+                        <div class="chart-container">
+                            <canvas id="batteryChart"></canvas>
+                        </div>
+                         <p class="mt-4 text-sm text-gray-600 text-center">DJI menawarkan waktu rekam yang jauh lebih lama, keuntungan besar untuk sesi panjang atau perjalanan.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold text-center mb-4">Kecepatan Pengisian Daya (hingga 80%)</h3>
+                        <div class="chart-container">
+                             <canvas id="chargingChart"></canvas>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600 text-center">DJI mengisi daya secara signifikan lebih cepat, mengurangi waktu henti antara pengambilan gambar.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md col-span-1 lg:col-span-2">
+                        <h3 class="text-xl font-bold text-center mb-4">Manajemen Panas & Overheating</h3>
+                        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+                            <div>
+                                <h4 class="font-semibold text-lg">GoPro Hero 12</h4>
+                                <p class="mt-2 text-gray-600">Rentan mengalami *overheating* saat merekam dalam resolusi tinggi tanpa aliran udara, terutama dalam kondisi statis.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">DJI Action 5 Pro</h4>
+                                <p class="mt-2 text-gray-600">Manajemen termal yang sangat baik. Hampir tidak ada masalah *overheating*, membuatnya jauh lebih andal untuk perekaman panjang.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rekomendasi" class="py-16 sm:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Rekomendasi Untuk Anda</h2>
+                    <p class="mt-4 text-lg text-gray-600">Pilih prioritas utama Anda untuk melihat kamera mana yang paling cocok.</p>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-3 mb-10">
+                    <button data-target="gopro-resolusi" class="recommendation-btn bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full transition-colors">Resolusi Video Tertinggi</button>
+                    <button data-target="dji-baterai" class="recommendation-btn bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full transition-colors">Daya Tahan Baterai & Anti Panas</button>
+                    <button data-target="dji-cahaya-rendah" class="recommendation-btn bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full transition-colors">Performa Cahaya Rendah</button>
+                    <button data-target="dji-audio" class="recommendation-btn bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full transition-colors">Vlogging & Audio Profesional</button>
+                    <button data-target="gopro-lensa" class="recommendation-btn bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full transition-colors">Fleksibilitas Lensa (FOV Luas)</button>
+                    <button data-target="dji-air" class="recommendation-btn bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full transition-colors">Olahraga Air & Menyelam</button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div id="gopro-card" class="highlight-card bg-gray-50 p-6 rounded-2xl border-2 border-transparent">
+                        <h3 class="text-2xl font-bold text-center">GoPro Hero 12 Black</h3>
+                         <div id="gopro-resolusi" class="recommendation-content hidden mt-4 p-4 bg-blue-50 border-l-4 border-blue-400 rounded">
+                            <h4 class="font-bold">Pilihan untuk Resolusi Maksimal</h4>
+                            <p class="text-gray-700 mt-1">Jika prioritas Anda adalah resolusi 5.3K untuk detail tertinggi dan fleksibilitas *cropping* saat editing, GoPro adalah juaranya.</p>
+                        </div>
+                        <div id="gopro-lensa" class="recommendation-content hidden mt-4 p-4 bg-blue-50 border-l-4 border-blue-400 rounded">
+                            <h4 class="font-bold">Pilihan untuk Fleksibilitas Lensa</h4>
+                            <p class="text-gray-700 mt-1">Ekosistem Max Lens Mod 2.0 memberikan FOV 177° yang ultra-lebar, sesuatu yang tidak bisa ditandingi DJI. Ideal untuk POV yang imersif.</p>
+                        </div>
+                        <p id="gopro-default" class="mt-4 text-gray-600">Unggul dalam resolusi video mentah dan memiliki ekosistem aksesori lensa yang matang. Pilihan tepat untuk videografer yang butuh fleksibilitas editing dan FOV yang sangat luas.</p>
+                    </div>
+                    <div id="dji-card" class="highlight-card bg-gray-50 p-6 rounded-2xl border-2 border-transparent">
+                        <h3 class="text-2xl font-bold text-center">DJI Osmo Action 5 Pro</h3>
+                        <div id="dji-baterai" class="recommendation-content hidden mt-4 p-4 bg-red-50 border-l-4 border-red-400 rounded">
+                            <h4 class="font-bold">Pilihan untuk Daya Tahan & Keandalan</h4>
+                            <p class="text-gray-700 mt-1">Dengan baterai yang tahan jauh lebih lama dan manajemen panas yang superior, DJI adalah pilihan paling andal untuk sesi perekaman panjang atau timelapse.</p>
+                        </div>
+                         <div id="dji-cahaya-rendah" class="recommendation-content hidden mt-4 p-4 bg-red-50 border-l-4 border-red-400 rounded">
+                            <h4 class="font-bold">Pilihan untuk Kondisi Cahaya Rendah</h4>
+                            <p class="text-gray-700 mt-1">Sensor yang lebih besar membuat perbedaan besar. Untuk rekaman malam, senja, atau dalam ruangan, DJI menghasilkan gambar yang jauh lebih bersih dan detail.</p>
+                        </div>
+                         <div id="dji-audio" class="recommendation-content hidden mt-4 p-4 bg-red-50 border-l-4 border-red-400 rounded">
+                            <h4 class="font-bold">Pilihan untuk Vlogger Profesional</h4>
+                            <p class="text-gray-700 mt-1">Integrasi langsung dengan DJI Mic 2 (mendukung 2 mic) tanpa perlu adaptor menjadikannya solusi audio terbaik dan paling praktis untuk konten kreator.</p>
+                        </div>
+                         <div id="dji-air" class="recommendation-content hidden mt-4 p-4 bg-red-50 border-l-4 border-red-400 rounded">
+                            <h4 class="font-bold">Pilihan untuk Petualang Air</h4>
+                            <p class="text-gray-700 mt-1">Tahan air hingga 20 meter tanpa casing (dua kali lipat GoPro) memberikan kebebasan lebih untuk menyelam atau snorkeling tanpa aksesori tambahan.</p>
+                        </div>
+                        <p id="dji-default" class="mt-4 text-gray-600">Pilihan serba bisa yang unggul dalam hal praktis: baterai, ketahanan panas, performa cahaya rendah, dan audio. Pilihan "pengguna daya" yang cerdas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
+            <p>Aplikasi Perbandingan Interaktif. Dibuat untuk memudahkan pengambilan keputusan.</p>
+            <p class="text-sm text-gray-400 mt-2">Data disarikan dari laporan perbandingan komprehensif.</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
 </html>
